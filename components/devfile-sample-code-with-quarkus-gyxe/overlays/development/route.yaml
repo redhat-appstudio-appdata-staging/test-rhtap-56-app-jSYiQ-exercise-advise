@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-code-with-quarkus-gyxe
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-code-with-quarkus-gyxe
+    app.kubernetes.io/part-of: test-rhtap-56-app
+  name: devfile-sample-code-with-1yav
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-code-with-quarkus-gyxe
+    weight: null
+status: {}
